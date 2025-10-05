@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    // File Layout
+    // "rootDir": "./src",
+    "outDir": "./dist",
+
+    // Environment Settings
+    "module": "ESNext", // ✅ use modern ESM
+    "target": "ESNext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+
+    // Node.js types
+    // "types": ["module"], // Removed to fix missing type definition error
+
+    // Other Outputs
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    // Stricter Typechecking Options
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // Recommended Options
+    "strict": true,
+    "skipLibCheck": true,
+
+    // Optional — for Playwright/React style projects
+    "jsx": "react-jsx"
+
+    // Remove problematic options
+    // "verbatimModuleSyntax": true,   ❌ remove this
+    // "isolatedModules": true,        ❌ not needed unless using Next.js
+    // "noUncheckedSideEffectImports": true, ❌ can cause issues
+    // "moduleDetection": "force"      ❌ not needed
+  },
+  "include": ["tests"]
+}
