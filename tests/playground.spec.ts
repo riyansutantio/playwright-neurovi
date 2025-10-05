@@ -206,7 +206,7 @@ test.describe("testing playwright on clinic uat", () => {
         });
 
         console.log(
-          "Successfully added schedule default for",
+          "Successfully added schedule default for ",
           availableStaff[0]?.name,
           "in unit",
           mappedUnit[index].unit_name
